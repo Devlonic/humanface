@@ -1,0 +1,12 @@
+.speech-wrapper {
+    z-index: 6000;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .speech {
+        margin-bottom: 5%;
+        font-weight: bold;
+        font-size: 2em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}

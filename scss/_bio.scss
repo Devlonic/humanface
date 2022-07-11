@@ -1,0 +1,32 @@
+.bio {
+    z-index: 6000;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 1s;
+
+    .content {
+
+        margin: 5em 5em 0 5em;
+        padding: 5% 10% 8% 15%;
+        height: 55%;
+        width: 100%;
+        background-color: #F6F6F6;
+        display: flex;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .about {
+
+                p {
+                    width: 15em;
+                }
+            }
+        }
+
+
+    }
+}

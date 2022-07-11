@@ -1,0 +1,58 @@
+.particles {
+    position: absolute;
+    width: 0;
+    z-index: 50001;
+    height: 100%;
+
+    .particle {
+        position: absolute;
+
+        background-color: rgba(134, 132, 132, 0.688);
+    }
+
+    .vertical {
+        width: 0.01vw;
+        height: 15vh;
+    }
+
+    .horizontal {
+        height: 0.01vw;
+        width: 15vh;
+    }
+
+    .vertical-animated {
+        animation-name: upDownAnimation;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .horizontal-animated {
+        animation-name: leftRightAnimation;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes upDownAnimation {
+        0% {
+            top: 0vh;
+        }
+
+        100% {
+            top: 85vh;
+        }
+    }
+
+    @keyframes leftRightAnimation {
+        0% {
+            left: 0vh;
+        }
+
+        100% {
+            left: 100vw;
+        }
+    }
+}

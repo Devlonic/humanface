@@ -1,0 +1,98 @@
+.hover-left-panel {
+    z-index: 7999;
+    width: 20%;
+    justify-content: flex-start;
+
+    .stack-menu {
+        margin: 0 3em 0 3em;
+    }
+
+
+
+    .progress-bar-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .progress-bar-vertical {
+            width: 1em;
+            height: 0vh;
+            background-color: black;
+            transition: 500ms;
+        }
+
+        .showen {
+            height: 100vh;
+        }
+    }
+
+    .unhovered-panel {
+        justify-content: flex-start;
+
+        .exploreTitle {
+            letter-spacing: 0.4em;
+            transition: 250ms;
+            transform: rotate(-90deg);
+            font-size: 1.1em;
+        }
+    }
+
+    .hovered-panel {
+        position: relative;
+        left: 10%;
+        bottom: 20%;
+        z-index: 1000;
+        opacity: 0;
+        transition: 500ms;
+        transition-delay: 1000ms;
+
+        ul {
+            li {
+                a {
+                    margin: 1em 0;
+                    text-align: right;
+                }
+
+                .hovered {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .hovered::before {
+                    content: '';
+                    display: inline-block;
+                    height: 0.25em;
+                    width: 3em;
+                    border-radius: 2em;
+                    margin-right: 0.5em;
+                    background-color: black;
+                }
+            }
+
+            text-align: right;
+
+        }
+
+
+
+    }
+
+    .visible {
+        opacity: 1;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    .slided {
+        margin: 0 0 0 10em;
+    }
+}
+
+.left-side {
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 1em;
+}

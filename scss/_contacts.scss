@@ -1,0 +1,73 @@
+.contacts-show-button {
+    width: auto;
+    height: auto;
+    z-index: 2000;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    z-index: 9000;
+    cursor: pointer;
+    position: absolute;
+    right: 3em;
+    top: 3em;
+
+    .material-symbols-outlined {
+        cursor: pointer;
+        font-size: 4em;
+    }
+}
+
+.contacts {
+    transition: 1s;
+    z-index: 8999;
+    background-color: #bfbebef0;
+    flex-direction: column;
+
+    .refs {
+        height: 80%;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .comments {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .comment {
+            width: 35%;
+            color: rgb(73, 72, 72);
+            text-align: center;
+        }
+
+        .comment::after {
+            content: "\"";
+        }
+
+        .comment::before {
+            content: "\"";
+        }
+
+        .author {
+            margin: 2em 0;
+            font-weight: bolder;
+            font-size: 0.7em;
+        }
+    }
+
+    a:hover {
+        text-decoration: line-through;
+    }
+
+    .commentSelectors {
+        margin: 0 0 3em 0;
+    }
+
+
+
+
+}

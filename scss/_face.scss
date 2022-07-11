@@ -1,0 +1,41 @@
+#face {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    display: block;
+
+    * {
+        width: 800px;
+        height: 800px;
+        position: absolute;
+    }
+
+    .eye-holes {
+        background-image: url("/images/face/eye-holes.png");
+        z-index: 1;
+    }
+
+    .eye-brows {
+        z-index: 2;
+        position: relative;
+        bottom: 50em;
+        background-image: url("/images/face/eye-brows.png");
+    }
+
+    .eye-balls {
+        z-index: -3;
+        position: relative;
+        background-image: url("/images/face/eye-balls.png");
+    }
+
+    .eye-lids {
+        transition: 750ms;
+        z-index: 100;
+        background-image: url("/images/face/eye-lids.png");
+    }
+
+    .closed {
+        display: block;
+        z-index: 10;
+    }
+}

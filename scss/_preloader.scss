@@ -1,0 +1,25 @@
+.preloader {
+    background-color: #101010;
+    z-index: 50000;
+    transition: 1s;
+
+    h3 {
+        text-align: right;
+        color: wheat;
+        font-size: 3em;
+    }
+}
+
+
+
+.progress-bar {
+    margin-top: 1em;
+    height: 0.1em;
+    background-color: wheat;
+}
+
+.loaded {
+    visibility: hidden;
+}
+
+.content {}
